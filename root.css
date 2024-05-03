@@ -1,0 +1,194 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+img{
+    width:100%;
+}
+
+body{
+    background-image: url(clouds2.png);
+    background-size: 100%;
+}
+
+@font-face {
+    font-family: youngMan;
+    src: url(Young\ Man.otf);
+}
+
+h1{
+    font-family: youngMan,"Courier New",Arial, Helvetica, sans-serif;
+}
+h2{
+    font-size: 32px;
+    font-family: youngMan,"Courier New",Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+
+p{
+    font-size: large;
+}
+
+a{
+    color:aliceblue;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas:
+        "header header header"
+        "left-menu content right-menu"
+        "footer footer footer";
+    min-height: 100vh;
+    grid-gap: 20px;
+}
+
+.header{
+    grid-area: header;
+    background-color: white;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: -20px;
+}
+
+.header img{
+    width:100px
+}
+
+.leftmenu{
+    grid-area: left-menu;
+    max-width: 100px;
+    background-color: rgb(63, 81, 140, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    color:aliceblue;
+}
+
+.rightmenu{
+    grid-area: right-menu;
+    max-width: 100px;
+    background-color: rgb(63, 81, 140, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    color:aliceblue;
+}
+
+.dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color:black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.maincontent{
+    grid-area: content;
+    background-color: rgba(180, 188, 214, 0.6);
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.intro-photo{
+    text-align: center;
+}
+  
+.intro-photo img {
+    height: 400px;
+    width: auto;
+    padding: 20px;
+    justify-content: center;
+    
+}
+
+.realphotos{
+    box-shadow: 0 0 30px rgb(255, 255, 255);
+}
+
+.intro h1{
+    font-size: 64px;
+}
+
+.aboutme img{
+    max-width: 200px;
+    min-width: none;
+    
+}
+
+#meadmire{
+    max-height: 250px;
+    margin-top: -150px;
+}
+
+.myinterest{
+    text-align: center;
+}
+
+.interests img{
+    max-height: 200px;
+    width:auto;
+    padding: 20px;
+}
+
+#mepaint{
+    margin-top: -80px;
+}
+
+.paintphotos,
+.puzzlephotos{
+    box-shadow: 0 0 30px rgb(255, 255, 255);
+}
+
+#mepuzzling{
+    margin-top: -80px;
+    margin-right: 20px
+}
+
+.language {padding-bottom: 10px;}
+
+.lg-img {
+	width: auto;
+	height: 2em;
+}
+.progress-bar {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden; 
+}
+
+.progress {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    line-height: 20px; 
+    border-radius: 5px; 
+}
+
+.footer{
+    height: 5em;
+    grid-area: footer;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    text-align:center;
+    margin-top: -20px;
+}
+
